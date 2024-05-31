@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica927883072.Ejercicio3"
+             Title="Ejercicio3">
+    <!---<Summary>
+ <Createddate> 26 may.2024</Createddate>
+ <company> Ejercicio 3 </company>
+ <lastmodificationdate> 28 may.2024 </lastmodificationdate>
+ <lastmodificationdescription>
+ ultima modificacion: Agregue la documentacion XML al programa
+ </lastmodificationdescription>
+ <lastmodifierautor> Jacqueline Argumedo </lastmodifierautor>
+ </Summary>-->
+
+    <!---<summary>
+    Permite construir un programa para calcular el promedio de cinco calificaciones por medio de 5 entrys que guardan
+los datos ingresados , y un entry que hara el trabajo en la operación para calcular el promedio y un boton
+que nos permitira crear un evento para mostrar el resultado obtenido de las calificaciones ingresadas</summary>
+ <param name="sender"></param>
+ <param name="e"></param>-->
+    <VerticalStackLayout>
+        <Label 
+            Text="Calificaciones!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image Source="calificaciones.jpg" WidthRequest="200"/>
+        <Entry x:Name="entry1" Placeholder="Ingrese su primera calificacion" WidthRequest="300" Margin="10"/>
+        <Entry x:Name="entry2" Placeholder="Ingresa su segunda calificacion" WidthRequest="300" Margin="10"/>
+        <Entry x:Name="entry3" Placeholder="Ingresa su tercera calificacion" WidthRequest="300" Margin="10"/>
+        <Entry x:Name="entry4" Placeholder="Ingresa su cuarta calificacion" WidthRequest="300" Margin="10"/>
+        <Entry x:Name="entry5" Placeholder="Ingresa su quinta calificacion" WidthRequest="300" Margin="10"/>
+        <Entry x:Name="entryr" Placeholder="resultado" WidthRequest="300"/>
+        <Button Text="Obtener su promedio" Clicked="Button_Clicked" Margin="20" WidthRequest="300"/>
+        <Button Text="Click al ejercicio4" Clicked="Button_Clicked_1" WidthRequest="300" />
+
+    </VerticalStackLayout>
+</ContentPage>

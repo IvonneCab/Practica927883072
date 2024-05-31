@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica927883072.Xamarin05"
+             Title="Xamarin05">
+    
+    <!---<Summary>
+    <Createddate> 26 may.2024</Createddate>
+    <company> Xamarin 05  </company>
+    <lastmodificationdate> 28 may.2024 </lastmodificationdate>
+    <lastmodificationdescription>
+    ultima modificacion: Agregue la documentacion XML al programa
+    </lastmodificationdescription>
+    <lastmodifierautor> Jacqueline Argumedo </lastmodifierautor>
+    </Summary>-->
+    
+    
+  <!---<summary>
+    permite organizar elementos secundarios ya sea horizontal o vertical, el button 
+    contiene texto para saber donde vaamos a dar click, color al texto,
+    color al boton, en el borde un color rojo
+    de grosor de borde, lo ancho y la altura del boton y un evento para que nos funcione
+    al final otro boton para que nos dirija al siguente ejercicio
+    </summary>
+    <param name="sender"></param>
+    <param name="e"></param>-->
+    
+    <StackLayout Margin="20,35,20,10">
+        <Button Text="Presioname"
+                TextColor="Green"
+                BackgroundColor="Yellow"
+                BorderColor="Red"
+                BorderWidth="3"
+                CornerRadius="20"
+                WidthRequest="300"
+                HeightRequest="60"
+                Clicked="Button_Clicked1" Margin="25"/>
+
+
+        <Button Text="presiona aqui para el siguiente ejercicio" Clicked="Button_Clicked"   WidthRequest="300" />
+   
+   
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica927883072.Ejercicio5"
+             Title="Ejercicio5">
+    <!---<Summary>
+ <Createddate> 26 may.2024</Createddate>
+ <company> Ejercicio 5 </company>
+ <lastmodificationdate> 28 may.2024 </lastmodificationdate>
+ <lastmodificationdescription>
+ ultima modificacion: Agregue la documentacion XML al programa
+ </lastmodificationdescription>
+ <lastmodifierautor> Jacqueline Argumedo </lastmodifierautor>
+ </Summary>-->
+    <!---<summary>
+   Permite construir un programa para calcular el resultado del perimetro y area de un rectangulo
+    los datos se altura y base se guardaran por medio de 2 entry y los calculos se haran por medio de los entrys denominados
+    para el area y el perimetro tanto como el veneto creado sea realizado por el usuario</summary>
+<param name="sender"></param>
+<param name="e"></param>-->
+    <VerticalStackLayout>
+        <Label 
+            Text="Rectangulo!"
+           
+            VerticalOptions="Center" 
+ HorizontalOptions="Center"/>
+        <Image Source="cuadrado.png" WidthRequest="200"/>
+
+
+        <Entry x:Name="entry1" Placeholder="Ingrese su altura" WidthRequest="300" Margin="10"/>
+        <Entry x:Name="entry2" Placeholder="Ingrese su base" WidthRequest="300" Margin="10"/>
+        <Entry x:Name="entryperimetro" Placeholder="resultado del perimetro" WidthRequest="300" Margin="10"/>
+        <Entry x:Name="entryarea" Placeholder="resultado del area" Margin="10" WidthRequest="300" />
+        <Button Text="Resultado" Clicked="Button_Clicked" WidthRequest="300" />
+
+
+    </VerticalStackLayout>
+</ContentPage>

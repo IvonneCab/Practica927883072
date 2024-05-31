@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica927883072.Ejercicio1"
+             Title="Ejercicio1">
+
+    <!---<Summary>
+ <Createddate> 26 may.2024</Createddate>
+ <company> Ejercicio 1  </company>
+ <lastmodificationdate> 28 may.2024 </lastmodificationdate>
+ <lastmodificationdescription>
+ ultima modificacion: Agregue la documentacion XML al programa
+ </lastmodificationdescription>
+ <lastmodifierautor> Jacqueline Argumedo </lastmodifierautor>
+ </Summary>-->
+
+    <!---<summary>
+  permite organizar elementos secundarios ya sea horizontal o vertical,colocamos un texto 
+    centrado para que nos indica que sera nuestra aplicacion
+    coloque un imagen que haga referencia al ejercicio y una ancho de 200, coloque unos entry
+    lo cual se le coloca nombres para distinguir a cada uno el placeholder indicando que tiene que digitar
+    el ancho del espacio que nos otorga y la distancia de cada uno de ellos, coloco un boton lo cual nos 
+    hara el resultado de lo que nosotros queremos y el otro es para dirigirnos a una nueva pagina</summary>
+  <param name="sender"></param>
+  <param name="e"></param>-->
+    <VerticalStackLayout>
+        <Label 
+            Text="Invertir Numeros!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image Source="numeros.jpg" WidthRequest="200"/>
+        <Entry x:Name="entry1" Placeholder="Numero 1" WidthRequest="300" Margin="10"/>
+        <Entry x:Name="entry2" Placeholder="Numero 2" WidthRequest="300"  Margin="10"/>
+        <Entry x:Name="entry3" Placeholder="Numero 3" WidthRequest="300"  Margin="10"/>
+        <Entry x:Name="entry4" Placeholder="Numero 4" WidthRequest="300"  Margin="10"/>
+        <Entry x:Name="entryr" Placeholder="resultado" WidthRequest="300"  Margin="10"/>
+        <Button Text="Invertir" Clicked="Button_Clicked_1" Margin="20"  WidthRequest="300"/>
+        <Button Text="Click al ejercicio2" Clicked="Button_Clicked" WidthRequest="300"/>
+    </VerticalStackLayout>
+</ContentPage>
